@@ -200,7 +200,7 @@ DocumentAndEntityInformationAbstract|Entity Shell Company                   |201
 
 ```
 
-4. segment
+## 5. segment
 Segment table will provide more information for the segment defined. Using Annual Report for CHEVRON CORP filed on  as eample, let's find its segment information for ProfitLoss:
 
 
@@ -223,7 +223,7 @@ cik  |accession_number_int|filing_date|datapoint_name|end_date  |start_date|peri
 93410|       9341019000008| 2019-02-22|ProfitLoss    |2018-12-31|2018-01-01|          12|14824000000 |Retained Earnings       |StatementEquityComponents=RetainedEarnings      |
 ```
 
-5. data_point_snapshot
+## 6. data_point_snapshot
 This information in this table is derived from as reported data_point table. Each data point will have only one last effective value at its earliest reporting date. 
 Let's use the AssetsCurrent as of 2015-12-31 for CHAVRON CORP again. In data_point table we have:
 
@@ -254,7 +254,7 @@ cik  |accession_number_int|filing_date|datapoint_id|datapoint_name|version     |
 ```
 So where is  the value as of 2016-02-25? Actually it is kept in the revision history in next table:
 
-6. data_point_revision
+## 7. data_point_revision
 This table will archive all the revised/restated value. As in the previous example, we use its datapoint_id to find its revision history:
 
 ```
