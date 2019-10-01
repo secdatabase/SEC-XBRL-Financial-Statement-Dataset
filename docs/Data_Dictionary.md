@@ -106,3 +106,12 @@
  ------------------------------|--------------|---|--------------------
   segment_hash                 | VARCHAR(50)  |*  | The hexadecimal key for the dimensional-segment information. Can be used to identify same segment across different submissions.
   segment                      | VARCHAR(1000)|   | The string version of the dimensional-segment information.
+
+## 7. data_point_revision
+ Data Point                    | Data Type    |Key| Description                                      
+ ------------------------------|--------------|---|--------------------
+  datapoint_id                 |  BIGINT      | * | Internal id used by secdatabase.com to track each data point.
+  accession_number_int         |  BIGINT      | * | The integer version of accession number.
+  filing_date                  |  DATE        |   | The date of the registrant's filing with the Commission.
+  string_value                 |  STRING      |   | The data value in string format as reported.
+  numeric_value                |  DOUBLE      |   | The numeric format of the data value, if it is a number. It is stored in double precision to be used for calculation.
