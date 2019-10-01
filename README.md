@@ -12,11 +12,11 @@ The data sets have been optimized in both table structures and storage format to
 The dataset on Google Bigquery is based on Dataset published by SEC (See next section), and is stale - the latest filing data is as of June 2018.
 
 ## How the dataset is different from dataset on SEC website
-SECDatabase.com initially use the dataset published by SEC first but untunately it has many limitations. SECDatabase.com eventually decide to build a new, complete dataset in an easy to consume format. This dataset has numerious improvements over the dataset on SEC website in the aspects of data accuracy, coverage, and ease of data usage. Here are some examples:
-1. text and notes data are in full-length without truncation. The dataset published by SEC trimed footnote to 512 chars, and string value to 2048 chars only.
+SECDatabase.com initially use the dataset published by SEC first but unfortunately it has many limitations. SECDatabase.com eventually decide to build a new, complete dataset in an easy to consume format. This dataset has numerous improvements over the dataset on SEC website in the aspects of data accuracy, coverage, and ease of data usage. Here are some examples:
+1. text and notes data are in full-length without truncation. The dataset published by SEC trimmed footnote to 512 chars, and string value to 2048 chars only.
 2. Report segment information are added to the data points directly.
 3. Include the start_date and end_date for each data point to reflect the period more accurately.
-4. Eliminated the needs to understand the convoluted XBRL convention as much as possible, so that Data Scientiest can focus on the data itself to derived the value.
+4. Eliminated the needs to understand the convoluted XBRL convention as much as possible, so that Data Scientist can focus on the data itself to derived the value.
 5. Support the tracing of the data point back to its original filing and specific section.
 6. Support the tracing of data point revision.
 
