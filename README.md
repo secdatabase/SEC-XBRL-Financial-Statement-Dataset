@@ -49,7 +49,7 @@ As of August 31, 2019, the dataset covers:
   sec_financial_statements.segment.sql
   ```
 
-## How to download the data in txt format
+## How to download the data in txt format using Athena
 With Athena you can easily convert the data in the tables, or the query results, to CSV/TSV and store them in your own S3 bucket. For example, the following Athena query will store the content in table _company_submission_ a tsv file in S3:
 ```
 CREATE TABLE sec_financial_statements.company_submission_tsv
@@ -60,6 +60,16 @@ CREATE TABLE sec_financial_statements.company_submission_tsv
       ) AS
   SELECT * FROM sec_financial_statements.company_submission
 ```
+
+## How to Access the Data using Redshift Spectrum
+Once you have completed the steps of setting up the database and tables in Athena, you can simply reference it through Redshift Spectrum. You can run the following query in Redshift:
+
+```
+CREATE EXTERNAL SCHEMA sec_financial_statements
+FROM data CATALOG DATABASE 'sec_financial_statements' iam_role 'arn:aws:iam::your-account-number:role/your-role-used-by-redshift'
+```
+You will see the redshift spectrum sec_financial_statements is created with all the tables under it.
+
 
 # Table Contents
 ## 1. company_submission
