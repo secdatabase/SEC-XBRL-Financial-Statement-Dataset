@@ -1,4 +1,4 @@
-# SEC-XBRL-Financial-Statement-Dataset
+# SEC XBRL Financial Statement Dataset
 ## *Optimized for Athena and Redshift Spectrum Access*
 
 The SEC Financial Statement Dataset provides the text and detailed numeric information from all financial statements and their full notes. The Dataset is extracted from corporate annual and quarterly reports filed with the SEC using XBRL since January 2009. 
