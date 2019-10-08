@@ -259,7 +259,7 @@ datapoint_id|accession_number_int|filing_date|string_value|numeric_value|
    688429758|       9341016000049| 2016-02-25|35347000000 |    3.5347E10|
 ```
 
-# Tips
+# Data Export
 ## How to download the data in txt format using Athena
 With Athena you can easily convert the data in the tables, or the query results, to CSV/TSV and store them in your own S3 bucket. For example, the following Athena query will store the content in table _company_submission_ a tsv file in S3:
 ```
