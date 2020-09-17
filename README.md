@@ -1,17 +1,16 @@
 # SEC XBRL Financial Statement Dataset
 
+## Dataset Producer
+[SECDatabase.com](https://www.secdatabase.com) created dataset, and updated it regularly for the community.
+
+## Support Contact
+Please write to info@secdatabase.com
 
 ## *Optimized for Athena and Redshift Spectrum Access*
 
 The SEC Financial Statement Dataset provides the text and detailed numeric information of all financial statements. The Dataset is extracted from corporate annual and quarterly reports filed with the SEC using XBRL since January 2009. 
 
 The data sets have been optimized in both table structures and storage format to be used specifically in AWS big data eco-system. SECDatabase.com evaluated multiple cloud platforms, and found that Athena, Redshift, and Glue really unleash our productivities.
-
-## Dataset Producer
-[SECDatabase.com](https://www.secdatabase.com) created dataset, and updated it regularly for the community.
-
-## Support Contact
-Please write to info@secdatabase.com
 
 ## How large is the dataset
 As of August 31, 2019, the dataset covers:
