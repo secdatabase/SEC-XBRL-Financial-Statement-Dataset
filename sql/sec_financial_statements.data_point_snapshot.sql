@@ -25,7 +25,7 @@ STORED AS INPUTFORMAT
 OUTPUTFORMAT 
   'org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat'
 LOCATION
-  's3://dataset.secdatabase.com/sec_financial_statements/parquet/data_point_snapshot'
+  's3://dataset.secdatabase.com/sec_financial_statements/parquet/20200930/data_point_snapshot'
 TBLPROPERTIES (
   'has_encrypted_data'='false', 
   'parquet.compression'='SNAPPY');
