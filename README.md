@@ -24,7 +24,7 @@ As of August 31, 2019, the dataset covers:
 ## 1. Signing in your AWS Account, and go to Athena Query Editor page.
 ![image](https://user-images.githubusercontent.com/55612745/65563569-a22ef280-df0f-11e9-8927-b94b3d83d348.png)
 
-## 2. Copy the content in _sec_financial_statements.sql_ file to Query Editor window, and click **Run query** to create the Athena Database **sec_financial_statements**:
+## 2. Go to [sql folder](https://github.com/secdatabase/SEC-XBRL-Financial-Statement-Dataset/tree/master/sql), and copy the content in _sec_financial_statements.sql_ file to Query Editor window, and click **Run query** to create the Athena Database **sec_financial_statements**:
 ```
   CREATE DATABASE sec_financial_statements;
 ```
