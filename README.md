@@ -6,6 +6,9 @@
 ## Support Contact
 Please write to info@secdatabase.com
 
+## XBRL Filings Included
+All Annual and Quarterly Reports in XBRL filed to SEC on or before 2020-09-30.
+
 ## *Optimized for Athena and Redshift Spectrum Access*
 
 The SEC Financial Statement Dataset provides the text and detailed numeric information of all financial statements. The Dataset is extracted from corporate annual and quarterly reports filed with the SEC using XBRL since January 2009. 
@@ -40,6 +43,13 @@ As of August 31, 2019, the dataset covers:
   sec_financial_statements.segment.sql
   ```
 All set! You can now proceed to next section to explore the data.
+
+## 4. Refresh the dataset tables
+secdatabase.com will refresh the dataset periodically. The refreshed dataset will be in the new location like this:
+s3://dataset.secdatabase.com/sec_financial_statements/parquet/20200930
+
+when new datasets are available, you can run the code as in the following script to switch the tables to the latest datasets:
+sec_financial_statements.alter_table_locations_to_latest_data.sql
 
 # Table Contents
 ## 1. company_submission
