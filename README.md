@@ -23,6 +23,11 @@ As of August 31, 2019, the dataset covers:
 4. 192.5 million data points.
 5. 20GB+ compressed in Parquet.
 
+# How to access dataset via RStudio
+[Redwall Analytics](https://redwallanalytics.com) published two articles that will be very helpful if you use the RStudio:
+https://redwallanalytics.com/2020/09/10/learning-sql-and-exploring-xbrl-with-secdatabase-com-part-1/
+https://redwallanalytics.com/2020/10/12/finding-the-dimensions-of-secdatabase-com-from-2010-2020-part-2/
+
 # How to access dataset via Athena
 ## 1. Signing in your AWS Account, and go to Athena Query Editor page.
 ![image](https://user-images.githubusercontent.com/55612745/65563569-a22ef280-df0f-11e9-8927-b94b3d83d348.png)
