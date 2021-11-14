@@ -1,7 +1,7 @@
 CREATE EXTERNAL TABLE sec_financial_statements.company_submission(
-  accession_number_int                               BIGINT       , -- The integer version of accession number
-  accession_number                                   CHAR(20)     , -- The 20-character string assigned by the SEC to each EDGAR submission
-  cik                                                INT          , -- Central Index Key
+  accession_number_int                               BIGINT       , 
+  accession_number                                   CHAR(20)     , 
+  cik                                                INT          , 
   company_name                                       VARCHAR(150) ,
   filing_date                                        DATE         ,
   document_type                                      VARCHAR(15)  ,
@@ -11,7 +11,7 @@ CREATE EXTERNAL TABLE sec_financial_statements.company_submission(
   document_fiscal_period_focus                       VARCHAR(2)   ,
   current_fiscal_year_end_month                      INT          ,
   amendment_flag                                     BOOLEAN      ,
-  assigned_sic                                       INT          , -- Standard Industrial Classification
+  assigned_sic                                       INT          , 
   irs_number                                         VARCHAR(10)  ,
   state_of_incorporation                             VARCHAR(2)   ,
   mailing_address_street1                            VARCHAR(40)  ,
